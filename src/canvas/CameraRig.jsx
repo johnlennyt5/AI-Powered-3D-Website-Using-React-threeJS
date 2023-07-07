@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { easing } from 'maath';
 import { useSnapshot } from 'valtio';
+import PropTypes from 'prop-types';
 
 import state from '../store';
 
@@ -35,8 +36,11 @@ const CameraRig = ({ children }) => {
     )
   })
 
-
   return <group ref={group}>{children}</group>
 }
 
-export default CameraRig
+CameraRig.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default CameraRig;

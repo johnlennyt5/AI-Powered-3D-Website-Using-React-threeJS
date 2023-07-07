@@ -1,9 +1,8 @@
-import React from 'react';
 import {motion, AnimatePresence} from 'framer-motion';
 import {useSnapshot} from 'valtio';
+
 import state from '../store';
 import { CustomButton } from '../components';
-
 import {
     headContainerAnimation,
     headContentAnimation,
@@ -27,7 +26,7 @@ const Home = () => {
             <motion.div className='home-content' {...headContainerAnimation}>
                 <motion.div {...headTextAnimation}>
                     <h1 className='head-text'>
-                      LET'S <br className="xl: block hidden" /> DO IT.  
+                    LET&apos;S <br className="xl: block hidden" /> DO IT.  
 
                     </h1>
                 </motion.div>
